@@ -1,0 +1,46 @@
+' Matriz de ocupación: 4 filas (aulas) x 5 columnas (bloques horarios)
+
+ALGORITMO TotalPorAula(m, F, C)                    ' suma de cada FILA
+1. PARA i DESDE 0 HASTA F - 1 HACER
+2.    total <- 0
+3.    PARA j DESDE 0 HASTA C - 1 HACER
+4.       total <- total + m[i][j]
+5.    FIN PARA
+6.    REPORTAR "Aula " + i + ": " + total
+7. FIN PARA
+FIN ALGORITMO
+
+ALGORITMO TotalPorHorario(m, F, C)                 ' suma de cada COLUMNA
+1. PARA j DESDE 0 HASTA C - 1 HACER
+2.    total <- 0
+3.    PARA i DESDE 0 HASTA F - 1 HACER
+4.       total <- total + m[i][j]
+5.    FIN PARA
+6.    REPORTAR "Bloque " + j + ": " + total
+7. FIN PARA
+FIN ALGORITMO
+
+ALGORITMO CeldaMaxima(m, F, C)                     ' celda con mayor ocupación
+1. maxValor <- m[0][0]
+2. maxFila  <- 0
+3. maxCol   <- 0
+4. PARA i DESDE 0 HASTA F - 1 HACER
+5.    PARA j DESDE 0 HASTA C - 1 HACER
+6.       SI m[i][j] > maxValor ENTONCES
+7.          maxValor <- m[i][j]
+8.          maxFila  <- i
+9.          maxCol   <- j
+10.       FIN SI
+11.    FIN PARA
+12. FIN PARA
+13. REPORTAR "Mayor ocupación:", maxValor, "en fila", maxFila, "columna", maxCol
+FIN ALGORITMO
+
+' Resultados con la matriz propuesta:
+'   Aulas:     A0=54, A1=43, A2=50, B3=39  (total general 186)
+'   Bloques:   B0=35, B1=34, B2=42, B3=38, B4=37
+'   Máximo:    15 en (fila 0, columna 3) = Aula 1, bloque 10:00
+'
+' COSTO: los tres algoritmos recorren todas las celdas ⇒ O(F × C) = O(20).
+' Se debe recorrer la matriz completa porque los datos están distribuidos
+' en todas las posiciones (no existe una única celda con la respuesta).

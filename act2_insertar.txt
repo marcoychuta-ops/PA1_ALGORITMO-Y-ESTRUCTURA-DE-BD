@@ -1,0 +1,21 @@
+ALGORITMO Insertar(lista, n, capacidad, posicion, valor)
+1. SI n >= capacidad ENTONCES
+2.    REPORTAR "vector lleno: no hay espacio para un nuevo taller"
+3.    TERMINAR
+4. FIN SI
+5. SI posicion < 0 O posicion > n ENTONCES
+6.    REPORTAR "posición inválida (permitida: 0 a " + n + ")"
+7.    TERMINAR
+8. FIN SI
+9. PARA i DESDE n - 1 HASTA posicion PASO -1 HACER   ' desplazamiento a la derecha
+10.    lista[i + 1] <- lista[i]
+11. FIN PARA
+12. lista[posicion] <- valor
+13. n <- n + 1
+14. REPORTAR lista
+FIN ALGORITMO
+
+' Ejemplo: Insertar([28,15,34,21,19,40,12,26], 8, 10, 4, 31)
+' Resultado: [28, 15, 34, 21, 31, 19, 40, 12, 26]  (n = 9, queda 1 espacio)
+' Si n = 10 (capacidad completa) el algoritmo reporta "vector lleno".
+' Estructura estática: el arreglo NO se redimensiona; solo se usa el espacio reservado.

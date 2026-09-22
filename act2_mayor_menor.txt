@@ -1,0 +1,26 @@
+ALGORITMO MayorMenor(lista, n)
+1. SI n = 0 ENTONCES
+2.    REPORTAR "vector vacío"
+3.    TERMINAR
+4. FIN SI
+5. mayor <- lista[0]
+6. menor <- lista[0]
+7. posMayor <- 0
+8. posMenor <- 0
+9. PARA i DESDE 1 HASTA n - 1 HACER
+10.    SI lista[i] > mayor ENTONCES
+11.       mayor <- lista[i]
+12.       posMayor <- i
+13.    FIN SI
+14.    SI lista[i] < menor ENTONCES
+15.       menor <- lista[i]
+16.       posMenor <- i
+17.    FIN SI
+18. FIN PARA
+19. REPORTAR "Mayor:", mayor, "en índice", posMayor
+20. REPORTAR "Menor:", menor, "en índice", posMenor
+FIN ALGORITMO
+
+' Vector del caso: [28, 15, 34, 21, 19, 40, 12, 26]
+' Resultado: Mayor = 40 (índice 5), Menor = 12 (índice 6)
+' Costo: una sola pasada ⇒ O(n) comparaciones (7 con n = 8)
