@@ -342,4 +342,5 @@ Ejemplo con la matriz 4 × 5 del sistema, ahora registrando **coincidencias entr
 # JAVIER ALONSO GALLEGOS RODRIGUEZ
 # JOSEP ANTONIO FONG MILONES 
 # MARCO YCHUTA SALDIVAR 
+# GENESIS PALOMA LUCIA CHUQUI ALLCA
 > **Integrantes:** completar los nombres en `README.md`.
