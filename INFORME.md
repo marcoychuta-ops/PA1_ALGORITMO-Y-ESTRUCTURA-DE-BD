@@ -326,6 +326,13 @@ Ejemplo con la matriz 4 × 5 del sistema, ahora registrando **coincidencias entr
 2. **Operaciones:** al recorrer solo los datos reales, búsquedas y sumas ignoran los ceros que no aportan información.
 3. **Claridad:** distingue claramente «no hay coincidencia» (0 implícito) de «hay dato», evitando cálculos inútiles.
 4. **Decisión técnica del equipo:** como esta relación entre talleres es **escasa por naturaleza**, se elige la representación **poco densa**; para la ocupación diaria de aulas (donde casi todas las celdas tienen estudiantes) se mantiene la **matriz completa**, porque allí sí hay datos en casi todas las posiciones.
+---
+
+## nota
+"tuvimo un problema en grabar el video adjunto fotos de los integrantes"
+https://github.com/marcoychuta-ops/PA1_ALGORITMO-Y-ESTRUCTURA-DE-BD/blob/main/WhatsApp%20Image%202026-09-23%20at%206.47.53%20PM.jpeg
+
+https://github.com/marcoychuta-ops/PA1_ALGORITMO-Y-ESTRUCTURA-DE-BD/blob/main/evidencia.jpeg
 
 ---
 
