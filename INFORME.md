@@ -337,7 +337,8 @@ Ejemplo con la matriz 4 × 5 del sistema, ahora registrando **coincidencias entr
 4. La **densidad** es el criterio técnico para elegir entre matriz completa y poco densa: se usa la dispersa cuando la mayoría de las celdas son cero.
 
 > **Video de exposición:** agregar aquí el enlace de YouTube (se sube como «no listado», con cámaras prendidas de todos los integrantes).
-
+https://youtu.be/CbldBacBBSI
+> 
 # WILMER JAMENER GUEVARA RAMOS
 # JAVIER ALONSO GALLEGOS RODRIGUEZ
 # JOSEP ANTONIO FONG MILONES 
